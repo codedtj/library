@@ -3514,11 +3514,6 @@ pre code {
   opacity: 1;
 }
 
-.form-control:-ms-input-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
-
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -3978,7 +3973,6 @@ textarea.form-control.is-invalid {
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -9686,21 +9680,18 @@ button.bg-dark:focus {
 .user-select-all {
   -webkit-user-select: all !important;
      -moz-user-select: all !important;
-      -ms-user-select: all !important;
           user-select: all !important;
 }
 
 .user-select-auto {
   -webkit-user-select: auto !important;
      -moz-user-select: auto !important;
-      -ms-user-select: auto !important;
           user-select: auto !important;
 }
 
 .user-select-none {
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
-      -ms-user-select: none !important;
           user-select: none !important;
 }
 
@@ -9729,7 +9720,6 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -9749,9 +9739,8 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -14344,9 +14333,8 @@ input[type=color].form-control:disabled {
   }
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .b-table-sticky-header > .table.b-table > thead > tr > th {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -14361,7 +14349,6 @@ input[type=color].form-control:disabled {
   [class*=table-responsive-] > .table.b-table > thead > tr > .b-table-sticky-column,
   [class*=table-responsive-] > .table.b-table > tbody > tr > .b-table-sticky-column,
   [class*=table-responsive-] > .table.b-table > tfoot > tr > .b-table-sticky-column {
-    position: -webkit-sticky;
     position: sticky;
     left: 0;
   }
@@ -14505,7 +14492,6 @@ input[type=color].form-control:disabled {
 .table.b-table.b-table-selectable:not(.b-table-selectable-no-click).b-table-selecting.b-table-select-range > tbody > tr {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
