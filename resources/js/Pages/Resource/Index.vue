@@ -1,10 +1,10 @@
 <template>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row d-none">
             <div class="container-fluid pt-3 pt-md-5 bg-akf-favourite" style="color: white">
                 <div class="row pt-md-5">
                     <div class="pl-md-5 col-md-7 pr-md-5">
-                        <h1 class="px-md-4" style="font-size: 2.45rem">{{ $t('message.main_page') }}</h1>
+                        <h1 class="px-md-4" style="font-size: 2.0rem">{{ $t('message.main_page') }}</h1>
                     </div>
                     <div class="col-md-5">
                         <p>{{ $t('message.random_buttons_instruction') }}</p>
@@ -37,10 +37,8 @@
                     <b-carousel
                         id="carousel-fade"
                         fade
-                        style="text-shadow: 0px 0px 2px #000"
-                        indicators
-                        img-width="1024"
-                        img-height="480"
+                        style="text-shadow: 0px 0px 2px #000;"
+                        indicator
                     >
                         <b-carousel-slide
                             img-src="/images/main-page-carousel-1.JPG"
@@ -212,7 +210,7 @@
         </b-row>
         <b-row>
             <resource-masonry-with-data-fetching ref="resources-list"
-                                                 :resources="this.pagination.data"
+
                                                  :url="fetchUrl">
             </resource-masonry-with-data-fetching>
         </b-row>
