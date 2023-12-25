@@ -29,9 +29,9 @@
                         <inertia-link class="btn btn-info mr-2" target="_blank" :href="route('resources.open', resource.id)">
                             <b-icon-file-earmark-text></b-icon-file-earmark-text>
                         </inertia-link>
-                        <inertia-link class="btn btn-info mr-2" download :href="route('resources.download', resource.id)">
+                        <a class="btn btn-info mr-2" download :href="route('resources.download', resource.id)">
                             <b-icon-arrow-down></b-icon-arrow-down>
-                        </inertia-link>
+                        </a>
                         <template v-if="resource.is_editable">
                             <inertia-link class="btn btn-info mr-2" :href="route('resources.edit', resource.id)">
                                 <b-icon-pencil></b-icon-pencil>
