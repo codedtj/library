@@ -40,7 +40,8 @@ new Vue({
                     }
 
                     return module.default;
-                }
+                },
+                resolveErrors: (page) => page.props.errors || {},
             },
         }),
 }).$mount(app);

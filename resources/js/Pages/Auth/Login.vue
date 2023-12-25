@@ -14,8 +14,8 @@
                         {{$t('label.sign_in')}}
                     </div>
                     <div class="card-body">
-                        <span class="text-danger">
-                            {{form.error('email')}}
+                        <span v-if="errors.email" class="text-danger">
+                            {{errors.email}}
                         </span>
                         <form @submit.prevent="submit">
                             <div class="form-group">
@@ -52,7 +52,6 @@
                                     {{ $t('label.submit') }}
                                 </button>
                             </div>
-
                         </form>
                     </div>
                 </div>
@@ -65,6 +64,9 @@
 <script>
 export default {
     name: "Login",
+    props: {
+        errors: Object
+    },
     data() {
         return {
             form: this.$inertia.form({
