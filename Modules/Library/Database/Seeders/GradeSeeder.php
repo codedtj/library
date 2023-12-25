@@ -12,10 +12,10 @@ use Modules\Library\Models\Grade;
 class GradeSeeder extends Seeder
 {
     public function run(){
-        Grade::create(['name' => 'Томактабӣ']);
+        Grade::create(['name' => 'preschool']);
 
         for($i = 0; $i < 12; $i++){
-            Grade::create(['name' => 'Синфи ' . $i]);
+            Grade::create(['name' => 'grade ' . $i]);
         }
     }
 }
