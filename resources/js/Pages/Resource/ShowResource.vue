@@ -7,7 +7,7 @@
                         <div class="mb-4">
                             <div class="cover-wrapper">
                                 <b-img class="resource-cover" :src="coverUrl"></b-img>
-                                <template v-if="$page.user">
+                                <template v-if="$page.props.auth.user">
                                     <b-icon-bookmark-fill v-if="resource.is_favourite" variant="danger" scale="1.5"
                                                           class="bookmark"
                                                           @click="removeFromFavourite"></b-icon-bookmark-fill>

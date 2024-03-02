@@ -26,7 +26,7 @@ export default {
         userInitials(){
             let rgx = new RegExp(/(\p{L}{1})\p{L}+/, 'gu');
 
-            let initials = [...this.$page.user.name.matchAll(rgx)] || [];
+            let initials = [...this.$page.props.auth.user.name.matchAll(rgx)] || [];
 
             return (
                 (initials.shift()?.[1] || '') + (initials.pop()?.[1] || '')

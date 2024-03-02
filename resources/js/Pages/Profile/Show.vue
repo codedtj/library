@@ -2,7 +2,7 @@
     <div class="w-100">
         <b-row>
             <b-col cols="12" class="mb-5" v-if="$page.jetstream.canUpdateProfileInformation">
-                <update-profile-information-form :user="$page.user"/>
+                <update-profile-information-form :user="$page.props.auth.user"/>
             </b-col>
 
             <b-col cols="12" class="mb-5" v-if="$page.jetstream.canUpdatePassword">

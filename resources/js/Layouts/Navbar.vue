@@ -22,7 +22,7 @@
                 </inertia-link>
             </div>
             <div class="c-nav-right">
-                <user-nav-item v-if="$page.user" class="d-none d-md-block"></user-nav-item>
+                <user-nav-item v-if="$page.props.auth.user" class="d-none d-md-block"></user-nav-item>
                 <inertia-link v-else :href="route('login')" class="sign-in-btn text-always-akf-favourite mr-1">
                     {{ $t('label.sign_in') }}
                 </inertia-link>
@@ -44,7 +44,7 @@
                 </button>
 
                 <div class="c-nav-right">
-                    <user-nav-item v-if="$page.user"></user-nav-item>
+                    <user-nav-item v-if="$page.props.auth.user"></user-nav-item>
                     <inertia-link v-else :href="route('login')" class="sign-in-btn text-always-akf-favourite mr-1">
                         {{ $t('label.sign_in') }}
                     </inertia-link>
