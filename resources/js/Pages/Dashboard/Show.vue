@@ -4,7 +4,6 @@
             <b-col cols="12">
                 <b-jumbotron>
                     <b-container fluid>
-
                         <b-row>
                             <inertia-link class="col-sm-4 col-md-4 col-lg-3 p-0 mr-sm-4 mb-4" :href="route('resources.create')">
                                 <b-aspect aspect="square" class="tile  shadow-light" style="background: #FFCC33">
@@ -49,7 +48,7 @@
                     </b-container>
                 </b-jumbotron>
             </b-col>
-            <b-col cols="12" v-if="$page.is_admin">
+            <b-col cols="12" v-if="$page.props.is_admin">
                 <b-jumbotron>
                     <b-container fluid>
                         <b-row>
