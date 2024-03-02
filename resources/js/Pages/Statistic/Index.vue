@@ -4,7 +4,7 @@
             <b-jumbotron>
                 <b-container fluid>
                     <b-row>
-                        <b-card bg-variant="warning" text-variant="white" header="All Resouces" class="text-center col-sm-3 col-md-4 col-lg-3 p-0 mr-sm-4 mb-4">
+                        <b-card bg-variant="warning" text-variant="white" :header="$t('label.total')" class="text-center col-sm-3 col-md-4 col-lg-3 p-0 mr-sm-4 mb-4">
                             <b-card-text>{{recources_count}}</b-card-text>
                         </b-card>
                         <b-card bg-variant="primary" text-variant="white" :header="$t('label.fiction_books')" class="text-center col-sm-4 col-md-4 col-lg-3 p-0 mr-sm-4 mb-4">

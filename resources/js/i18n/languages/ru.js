@@ -109,6 +109,7 @@ export default {
         additional_course_materials: 'дополнительные материалы курса',
         teacher_training_materials: 'учебные материалы для учителей',
         about_the_project: 'О проекте',
+        total: 'итого'
     },
     message: {
         main_page: '“Читайте, учитесь и развивайтесь вместе с электронной библиотекой.”',

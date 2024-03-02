@@ -41,7 +41,7 @@ class StatisticResourceController extends Controller
                 'demonstrations_count',
                 'industry_materials_count',
                 'additional_course_materials_count',
-                'teacher_training_materials_count'.
+                'teacher_training_materials_count',
                 'audio_materials_count'
             ]));
 
